@@ -6,7 +6,7 @@
   "license": "MIT",
   "version": "0.0.1",
   "engines": {
-    "vscode": "^1.74.0"
+    "vscode": "^1.76.0"
   },
   "dependencies": {
     "vscode-languageclient": "^8.1.0"
@@ -26,7 +26,8 @@
           "Jasmin"
         ],
         "extensions": [
-          ".jazz"
+          ".jazz",
+          ".jinc"
         ],
         "configuration": "./jasmin.configuration.json"
       }
@@ -43,12 +44,12 @@
           },
           "jasmin.args": {
             "type": "array",
-            "default": [
-            ],
+            "default": [],
             "description": "jasmin language server arguments"
           }
         }
-      }],
+      }
+    ],
     "commands": [
       {
         "command": "jasmin-lang.helloWorld",
@@ -75,6 +76,7 @@
     "@typescript-eslint/eslint-plugin": "^5.53.0",
     "@typescript-eslint/parser": "^5.53.0",
     "@vscode/test-electron": "^2.2.3",
+    "@vscode/vsce": "^2.21.1",
     "eslint": "^8.34.0",
     "glob": "^8.1.0",
     "mocha": "^10.2.0",
