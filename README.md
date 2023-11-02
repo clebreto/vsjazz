@@ -18,5 +18,12 @@ nix develop
 dune build
 ```
 
+### vscode user settings
+
+Set the ```jasmin.path``` setting to the full path to the jasmin-language-server binary.
+```json
+"jasmin.path": "/path/to/jasmin-lsp"
+```
+
 ## License
 Unless mentioned otherwise, files in this repository are [distributed under the MIT License](LICENSE).

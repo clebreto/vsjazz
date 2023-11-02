@@ -1,6 +1,6 @@
 {
-  "name": "jasmin-lang",
-  "displayName": "Jasmin Language",
+  "name": "vsjazz",
+  "displayName": "VsJazz",
   "description": "VsCode extension for Jasmin language support",
   "publisher": "jasmin-lang",
   "license": "MIT",
@@ -52,12 +52,6 @@
             "description": "jasmin language server arguments"
           }
         }
-      }
-    ],
-    "commands": [
-      {
-        "command": "jasmin-lang.helloWorld",
-        "title": "Hello World"
       }
     ]
   },
