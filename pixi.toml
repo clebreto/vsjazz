@@ -1,0 +1,11 @@
+[workspace]
+authors = ["Côme LE BRETON <come.le-breton@inria.fr>"]
+channels = ["conda-forge"]
+name = "vsjazz"
+platforms = ["osx-arm64"]
+version = "0.1.0"
+
+[tasks]
+
+[dependencies]
+nodejs = ">=24.4.1,<24.5"
