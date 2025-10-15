@@ -53,6 +53,15 @@
             "default": "",
             "markdownDescription": "Path to the master Jasmin file (compilation entry point). Supports `${workspaceFolder}` variable.",
             "scope": "resource"
+          },
+          "jasmin.namespacePaths": {
+            "type": "object",
+            "default": {},
+            "markdownDescription": "Mapping of namespace identifiers to filesystem paths. Example: `{\"Common\": \"/path/to/common\", \"Crypto\": \"/path/to/crypto\"}`",
+            "scope": "resource",
+            "additionalProperties": {
+              "type": "string"
+            }
           }
         }
       }
@@ -61,6 +70,14 @@
       {
         "command": "jasmin.setMasterFile",
         "title": "Jasmin: Set Master File"
+      },
+      {
+        "command": "jasmin.configureNamespace",
+        "title": "Jasmin: Configure Namespace Path"
+      },
+      {
+        "command": "jasmin.showConfiguration",
+        "title": "Jasmin: Show Configuration"
       }
     ]
   },
@@ -93,8 +110,6 @@
     "webpack-cli": "^5.0.1"
   },
   "activationEvents": [
-    "onLanguage:jasmin",
-    "onCommand:jasmin.setMasterFile",
     "workspaceContains:**/*.jazz",
     "workspaceContains:**/*.jinc"
   ]
