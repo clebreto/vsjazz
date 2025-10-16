@@ -1,0 +1,7 @@
+// Master file for testing
+from Common require "utils.jinc"
+
+export fn main() {
+  reg u64 x;
+  x = 100;
+}

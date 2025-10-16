@@ -1,0 +1,13 @@
+// Sample Jasmin file for testing
+
+fn test_function(reg u64 x) -> reg u64 {
+  reg u64 result;
+  result = x + 1;
+  return result;
+}
+
+export fn main() {
+  reg u64 a;
+  a = 42;
+  a = test_function(a);
+}

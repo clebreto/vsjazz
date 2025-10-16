@@ -47,7 +47,20 @@ export function activate(context: vscode.ExtensionContext) {
 
 	let clientOptions: LanguageClientOptions = {
 		documentSelector: [{ scheme: 'file', language: 'jasmin' }],
-		initializationOptions: config
+		initializationOptions: config,
+		synchronize: {
+			// Notify the server about file changes to '.jazz' and '.jinc' files contained in the workspace
+			fileEvents: workspace.createFileSystemWatcher('**/*.{jazz,jinc}'),
+			// Configuration sections to synchronize
+			configurationSection: 'jasmin'
+		},
+		diagnosticCollectionName: 'jasmin',
+		middleware: {
+			handleDiagnostics: (uri, diagnostics, next) => {
+				console.log(`Received ${diagnostics.length} diagnostics for ${uri.toString()}`);
+				next(uri, diagnostics);
+			}
+		}
 	};
 
 	// Create the language client and start the client.

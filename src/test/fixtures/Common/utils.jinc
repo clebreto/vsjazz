@@ -1,0 +1,7 @@
+// Utility functions
+
+fn util_function(reg u64 x) -> reg u64 {
+  reg u64 result;
+  result = x * 2;
+  return result;
+}

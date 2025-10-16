@@ -1,0 +1,3 @@
+[submodule "jasmin-lsp"]
+	path = jasmin-lsp
+	url = git@github.com:clebreto/jasmin-lsp.git
