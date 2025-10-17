@@ -26,6 +26,8 @@ jasmin-lsp can be built using : pixi run build in the jasmin-lsp folder.
 
 vsjazz can be build using : npm run compile in the vsjazz folder.
 
+tree-sitter-jasmin grammar can be updated by running : "tree-sitter generate" in tree-sitter-jasmin within the pixi environment of jasmin-lsp.
+
 ## Testing
 
 jasmin-lsp can be tested individually by running : pixi run test in the jasmin-lsp folder.
@@ -36,7 +38,8 @@ vsjazz can be tested individually by running : npm run compile-tests && npm test
 
 - You will always start by adding tests for new features, before implementing the feature.
 - Tests must always be run after modifications are brought to the code. You must iterate until the tests are all passing, either by updating the code, or updating the tests if the request updates the requirements.
-- Reports of achievements / summaries must be as light as possible, i.e. 10 lines at most, and must not be reported into a file.
+- Reports of achievements / summaries must be as light as possible, i.e. 10 lines at most, and must not be reported into a file; i.e. no summary document should be generated.
+- README.md or existing documentation must be updated to incorporate the new features or to take into account the changes.
 
 
 

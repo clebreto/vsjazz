@@ -27,6 +27,21 @@ Set the ```jasmin.path``` setting to the full path to the jasmin-language-server
 
 ## Features
 
+### Real-Time Diagnostics
+
+The extension provides real-time syntax error detection that updates automatically:
+- **As you type**: PROBLEMS panel updates while editing
+- **On file save**: Diagnostics refreshed automatically
+- **External changes**: Updates when files change on disk (git, external editors)
+
+Detected errors include:
+- Missing semicolons
+- Unclosed braces
+- Invalid function signatures
+- Malformed syntax
+
+See [DIAGNOSTICS_SETUP.md](dev-doc/DIAGNOSTICS_SETUP.md) for setup instructions.
+
 ### Master File Configuration
 
 Set the master Jasmin file (compilation entry point) to enable full LSP features:
